@@ -28,8 +28,10 @@ class BasicNavigationController: UINavigationController {
     }
     
     private func setupUI() {
-        self.navigationBar.isTranslucent = false
-        self.navigationBar.barTintColor = AppTheme.backgroundBar
+        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        self.navigationBar.backgroundColor = .clear
+        self.navigationBar.shadowImage = UIImage()
+        self.navigationBar.isTranslucent = true
         self.navigationBar.tintColor = AppTheme.accentText
         self.navigationBar.titleTextAttributes = [.font: PTRootUI.bold.font(size: 20.0),
                                                   .foregroundColor: AppTheme.accentText]

@@ -7,8 +7,7 @@
 //
 
 import UIKit
-import GoogleMaps
-import GooglePlaces
+import FlickrKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -27,13 +26,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     // MARK: - Application configuration
     private func setup(_ application: UIApplication) {
-        GMSServices.provideAPIKey(AppConfiguration.googleMapsApiKey)
-        GMSPlacesClient.provideAPIKey(AppConfiguration.googleMapsApiKey)
+        FlickrKit.shared().initialize(withAPIKey: AppConfiguration.flickrApiKey, sharedSecret: AppConfiguration.flickrSecretKey)
     }
     
     // MARK: - Window configuration
     private func setup(_ window: UIWindow) {
-        let nc = BasicNavigationController(rootViewController: UIViewController())
+        let vc = MainConfigurator.create()
+        _ = MainConfigurator.configure(with: vc)
+        
+        let nc = BasicNavigationController(rootViewController: vc)
         
         self.window = window
         self.window?.rootViewController = nc
@@ -41,4 +42,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
 }
-

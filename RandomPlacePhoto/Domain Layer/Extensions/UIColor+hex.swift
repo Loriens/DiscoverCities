@@ -18,7 +18,6 @@ public extension UIColor {
     convenience init(hex: String, alpha: CGFloat) {
         var hexWithoutSymbol = hex
         
-        // TODO: Not working, need to fix
         if hexWithoutSymbol.hasPrefix("#") {
             guard let sharpIndex = hexWithoutSymbol.firstIndex(of: "#") else {
                 self.init(red: 0,

@@ -14,7 +14,7 @@ enum AppTheme {
     public static var statusBarStyle: UIStatusBarStyle {
         switch AppThemeManager.current.type {
         case .light:
-            return .lightContent
+            return .default
         case .dark:
             return .lightContent
         }
@@ -24,29 +24,9 @@ enum AppTheme {
     public static var backgroundMain: UIColor {
         switch AppThemeManager.current.type {
         case .light:
-            return UIColor(hex: "FFFFFF", alpha: 1.0)
+            return UIColor(hex: "F3F4F9", alpha: 1.0)
         case .dark:
             return UIColor(hex: "2A2A30", alpha: 1.0)
-        }
-    }
-    
-    // MARK: - Navigation bar background color
-    public static var backgroundBar: UIColor {
-        switch AppThemeManager.current.type {
-        case .light:
-            return UIColor(hex: "4ABAF9", alpha: 1.0)
-        case .dark:
-            return UIColor(hex: "CE1F1F", alpha: 1.0)
-        }
-    }
-    
-    // MARK: - Separator views background
-    public static var backgroundSeparator: UIColor {
-        switch AppThemeManager.current.type {
-        case .light:
-            return UIColor(hex: "A5A5AF", alpha: 1.0)
-        case .dark:
-            return UIColor(hex: "37373C", alpha: 1.0)
         }
     }
     
@@ -54,7 +34,7 @@ enum AppTheme {
     public static var accentMain: UIColor {
         switch AppThemeManager.current.type {
         case .light:
-            return UIColor(hex: "4ABAF9", alpha: 1.0)
+            return UIColor(hex: "2645EA", alpha: 1.0)
         case .dark:
             return UIColor(hex: "CE1F1F", alpha: 1.0)
         }
@@ -64,7 +44,7 @@ enum AppTheme {
     public static var accentText: UIColor {
         switch AppThemeManager.current.type {
         case .light:
-            return UIColor(hex: "FFFFFF", alpha: 1.0)
+            return UIColor.darkGray
         case .dark:
             return UIColor(hex: "FFFFFF", alpha: 1.0)
         }
@@ -74,19 +54,9 @@ enum AppTheme {
     public static var textMain: UIColor {
         switch AppThemeManager.current.type {
         case .light:
-            return UIColor(hex: "36393D", alpha: 1.0)
+            return UIColor.gray
         case .dark:
             return UIColor(hex: "D0D0D1", alpha: 1.0)
-        }
-    }
-    
-    // MARK: - Sub text color
-    public static var textSub: UIColor {
-        switch AppThemeManager.current.type {
-        case .light:
-            return UIColor(hex: "A5A5AF", alpha: 1.0)
-        case .dark:
-            return UIColor(hex: "5F6770", alpha: 1.0)
         }
     }
     

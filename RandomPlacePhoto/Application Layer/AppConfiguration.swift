@@ -10,8 +10,12 @@ import Foundation
 
 enum AppConfiguration {
     
-    static var googleMapsApiKey: String {
-        return ""
+    static var flickrApiKey: String {
+        return "a72a8133fb46c7e084e9661357c1ff6f"
+    }
+    
+    static var flickrSecretKey: String {
+        return "541d585be5aecc62"
     }
     
 }

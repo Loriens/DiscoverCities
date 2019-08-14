@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import FlickrKit
 
 enum AppDefaults {
     static let activeTheme: String =  "APP_ACTIVE_THEME"

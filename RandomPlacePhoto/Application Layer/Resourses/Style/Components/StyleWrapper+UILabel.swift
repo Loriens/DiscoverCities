@@ -16,7 +16,7 @@ extension StyleWrapper where Element: UILabel {
             label.numberOfLines = 0
             label.lineBreakMode = .byTruncatingTail
             label.font = PTRootUI.bold.font(size: 20.0)
-            label.textColor = AppTheme.accentMain
+            label.textColor = AppTheme.accentText
         }
     }
     

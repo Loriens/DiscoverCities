@@ -8,11 +8,13 @@ target 'RandomPlacePhoto' do
   # Load images
   pod 'Kingfisher', '~> 5.7.0'
 
-  # Maps and places
-  pod 'GoogleMaps', '~> 3.2.0'
-  pod 'GooglePlaces', '~> 3.2.0'
+  # Network
+  pod 'Alamofire', '~> 4.8.2'
 
   # Loader
   pod 'NVActivityIndicatorView', '~> 4.7.0'
+
+  # Flickr
+  pod 'FlickrKit', '1.0.9'
 
 end

@@ -9,20 +9,19 @@
 import UIKit
 import Kingfisher
 
-// TODO: - Добавить рамку к изображениям
 class MainViewController: UIViewController, MainViewInput {
 
     // MARK: - Outlets
     @IBOutlet private weak var infoView: UIView!
     @IBOutlet private weak var cityNameLabel: UILabel!
+    @IBOutlet private weak var nextCityButton: UIButton!
     
     // MARK: - Props
     var output: MainViewOutput?
-    var animator: UIViewPropertyAnimator!
     
     private var removedView: UIView?
     private var photosURLs: [URL] = []
-    private var countOfPhotos = 0
+    private var photosImageViews: [UIImageView] = []
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
@@ -41,13 +40,17 @@ class MainViewController: UIViewController, MainViewInput {
     // MARK: - Setup functions
     func setupComponents() {
         view.backgroundColor = AppTheme.backgroundMain
+        nextCityButton.setTitle(AppLocalization.General.next.localized, for: .normal)
     }
     
-    func setupActions() { }
+    func setupActions() {
+        nextCityButton.addTarget(self, action: #selector(nextButtonPressed), for: .touchUpInside)
+    }
     
     func applyStyles() {
         cityNameLabel.apply(.bigTitleStyle())
         infoView.apply(.infoStyle())
+        nextCityButton.apply(.accentMainStyle())
     }
     
     // MARK: - MainViewInput
@@ -59,7 +62,7 @@ class MainViewController: UIViewController, MainViewInput {
     
     func updatePhotoSlider(with photos: [URL]) {
         photosURLs = photos
-        countOfPhotos += photos.count
+        photosImageViews = []
         
         addPhotos()
     }
@@ -85,11 +88,15 @@ extension MainViewController {
                 recognizer.view?.removeFromSuperview()
             }
             
-            guard removedView != recognizer.view else { return }
-            removedView = recognizer.view
+            guard let view = recognizer.view as? UIImageView,
+                photosImageViews.contains(view) else {
+                    clearData()
+                    output?.loadData()
+                    return
+            }
+            photosImageViews.removeAll(where: { $0 == view })
             
-            countOfPhotos -= 1
-            if countOfPhotos <= 0 {
+            if photosImageViews.isEmpty {
                 output?.loadData()
             }
         } else if recognizer.state == .ended {
@@ -102,6 +109,12 @@ extension MainViewController {
                 recognizer.view?.center.y = self.view.center.y + translationY
             })
         }
+    }
+    
+    @objc
+    private func nextButtonPressed() {
+        clearData()
+        output?.loadData()
     }
     
 }
@@ -130,14 +143,21 @@ extension MainViewController {
         imageView.isUserInteractionEnabled = true
         imageView.contentMode = .scaleAspectFit
         
-        self.view.addSubview(imageView)
-        self.view.sendSubviewToBack(imageView)
+        view.insertSubview(imageView, at: 0)
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.imageViewPanGestureHandler))
         panGestureRecognizer.minimumNumberOfTouches = 1
         imageView.addGestureRecognizer(panGestureRecognizer)
+        photosImageViews.append(imageView)
         
         return imageView
+    }
+    
+    private func clearData() {
+        for imageView in photosImageViews {
+            imageView.removeFromSuperview()
+        }
+        photosImageViews = []
     }
     
 }

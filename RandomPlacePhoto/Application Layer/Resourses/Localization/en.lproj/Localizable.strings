@@ -5,3 +5,19 @@
   Created by Vladislav on 12/08/2019.
   Copyright © 2019 Vladislav Markov. All rights reserved.
 */
+
+// MARK: - Основное
+"OK" = "OK";
+"Save" = "Save";
+"Cancel" = "Cancel";
+"Next" = "Next";
+
+// MARK: - Темы и языки
+"AppThemeLight" = "Light";
+"AppThemeDark" = "Dark";
+
+"AppLanguageEnglish" = "English";
+"AppLanguageRussian" = "Russian";
+
+// MARK: - Главная
+"MainNextCityTitle" = "Next city";

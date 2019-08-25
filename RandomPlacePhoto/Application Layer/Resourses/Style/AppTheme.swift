@@ -34,7 +34,7 @@ enum AppTheme {
     public static var accentMain: UIColor {
         switch AppThemeManager.current.type {
         case .light:
-            return UIColor(hex: "2645EA", alpha: 1.0)
+            return UIColor(hex: "6686f7", alpha: 1.0)
         case .dark:
             return UIColor(hex: "CE1F1F", alpha: 1.0)
         }

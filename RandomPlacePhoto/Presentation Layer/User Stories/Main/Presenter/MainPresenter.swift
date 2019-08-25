@@ -8,6 +8,7 @@
 
 import FlickrKit
 
+// TODO: - Добавить случайный выбор страницы при поиске новых фотографий
 class MainPresenter: MainPresenterInput, MainViewOutput {
     
     // MARK: - Props

@@ -48,6 +48,7 @@
 		0473F51F23032199005412BF /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473F51523032199005412BF /* MainConfigurator.swift */; };
 		0473F52A23033C56005412BF /* String+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473F52923033C56005412BF /* String+className.swift */; };
 		0473F52C23033CCE005412BF /* UIViewController+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473F52B23033CCE005412BF /* UIViewController+identifier.swift */; };
+		04B6137223131BB30099525D /* StyleWrapper+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6137123131BB30099525D /* StyleWrapper+UIButton.swift */; };
 		8FBB3C8E0B415FED3B9ADB94 /* Pods_RandomPlacePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8ED9F7363EE3990618BFB /* Pods_RandomPlacePhoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		0473F51523032199005412BF /* MainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		0473F52923033C56005412BF /* String+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+className.swift"; sourceTree = "<group>"; };
 		0473F52B23033CCE005412BF /* UIViewController+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+identifier.swift"; sourceTree = "<group>"; };
+		04B6137123131BB30099525D /* StyleWrapper+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIButton.swift"; sourceTree = "<group>"; };
 		3918795E5080120FA7E068E4 /* Pods-RandomPlacePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPlacePhoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomPlacePhoto/Pods-RandomPlacePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 		50E8ED9F7363EE3990618BFB /* Pods_RandomPlacePhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomPlacePhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7C08665D533ABF83A9AA8 /* Pods-RandomPlacePhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPlacePhoto.release.xcconfig"; path = "Target Support Files/Pods-RandomPlacePhoto/Pods-RandomPlacePhoto.release.xcconfig"; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				0463117C2301CC8C00C640E8 /* Stylable.swift */,
+				04B6137123131BB30099525D /* StyleWrapper+UIButton.swift */,
 				0463117E2301CC9200C640E8 /* StyleWrapper.swift */,
 				046311802301CCAD00C640E8 /* StyleWrapper+UILabel.swift */,
 				040F2407230426C100883C5F /* StyleWrapper+UIView.swift */,
@@ -296,8 +299,8 @@
 			children = (
 				0473F52923033C56005412BF /* String+className.swift */,
 				0463118B2301CDD300C640E8 /* UIColor+hex.swift */,
-				0473F52B23033CCE005412BF /* UIViewController+identifier.swift */,
 				0411E90E2312EE660084452A /* UIImageView+getScaledImageSize.swift */,
+				0473F52B23033CCE005412BF /* UIViewController+identifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -556,6 +559,7 @@
 				0473F51923032199005412BF /* MainRouterInput.swift in Sources */,
 				046311792301CC5300C640E8 /* AppTheme.swift in Sources */,
 				0463118C2301CDD300C640E8 /* UIColor+hex.swift in Sources */,
+				04B6137223131BB30099525D /* StyleWrapper+UIButton.swift in Sources */,
 				0473F51B23032199005412BF /* MainViewInput.swift in Sources */,
 				0463114F2301CA6C00C640E8 /* AppConfiguration.swift in Sources */,
 				0406C9EE2301C8860075A96B /* AppDelegate.swift in Sources */,

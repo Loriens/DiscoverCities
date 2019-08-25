@@ -14,6 +14,7 @@ enum AppLocalization {
         case ok = "OK"
         case save = "Save"
         case cancel = "Cancel"
+        case next = "Next"
     }
     
     enum Theme: String, Localizable {
@@ -24,6 +25,10 @@ enum AppLocalization {
     enum Language: String, Localizable {
         case english = "AppLanguageEnglish"
         case russian = "AppLanguageRussian"
+    }
+    
+    enum Main: String, Localizable {
+        case nextCity = "MainNextCityTitle"
     }
     
 }

@@ -14,38 +14,43 @@ class MainViewController: UIViewController, MainViewInput {
     // MARK: - Outlets
     @IBOutlet private weak var infoView: UIView!
     @IBOutlet private weak var cityNameLabel: UILabel!
-    
-    var collectionView: UICollectionView!
+    @IBOutlet private weak var cityImageView: UIImageView!
     
     // MARK: - Props
     var output: MainViewOutput?
+    var animator: UIViewPropertyAnimator!
+    
+    private var photosURLs: [URL] = []
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.output?.loadData()
-        self.setupComponents()
+        output?.loadData()
+        
+        setupComponents()
+        setupActions()
     }
     
     override func viewDidLayoutSubviews() {
-        self.applyStyles()
+        applyStyles()
     }
     
     // MARK: - Setup functions
     func setupComponents() {
-        self.view.backgroundColor = AppTheme.backgroundMain
+        view.backgroundColor = AppTheme.backgroundMain
+    }
+    
+    func setupActions() {
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(imageViewPanGestureHandler))
+        panGestureRecognizer.minimumNumberOfTouches = 1
+        cityImageView.addGestureRecognizer(panGestureRecognizer)
     }
     
     func applyStyles() {
-        self.cityNameLabel.apply(.bigTitleStyle())
-        self.infoView.apply(.infoStyle())
-        
-        guard let collectionView = self.collectionView,
-            let flowLayout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout else {
-            return
-        }
-        flowLayout.invalidateLayout()
+        cityNameLabel.apply(.bigTitleStyle())
+        infoView.apply(.infoStyle())
+        cityImageView.isUserInteractionEnabled = true
     }
     
     // MARK: - MainViewInput
@@ -55,15 +60,38 @@ class MainViewController: UIViewController, MainViewInput {
         }
     }
     
-    func updatePhotoSlider(with photos: [URL]) { }
+    func updatePhotoSlider(with photos: [URL]) {
+        photosURLs = photos
+        
+        addPhoto()
+    }
     
 }
 
 // MARK: - Actions
-extension MainViewController { }
+extension MainViewController {
+    
+    @objc
+    func imageViewPanGestureHandler(recognizer: UIPanGestureRecognizer) {
+        UIView.animate(withDuration: 0.2) {
+            self.cityImageView.center = recognizer.location(in: self.view)
+        }
+    }
+    
+}
 
 // MARK: - Module functions
-extension MainViewController { }
-
-// MARK: - Module UIViewControllerTransitioningDelegate
-extension MainViewController: UIViewControllerTransitioningDelegate { }
+extension MainViewController {
+    
+    func addPhoto() {
+        guard !photosURLs.isEmpty else { return }
+        let url = photosURLs.removeFirst()
+        
+        DispatchQueue.main.async {
+            self.cityImageView.kf.setImage(with: url) { _ in
+                self.cityImageView.setNeedsLayout()
+            }
+        }
+    }
+    
+}

@@ -23,19 +23,19 @@ enum CityStorage {
     }
     
     static func getAll() -> [City] {
-        if self.cities.isEmpty {
+        if cities.isEmpty {
             CityStorage.loadAll()
         }
         
-        return self.cities
+        return cities
     }
     
     static func getRandomCity() -> City? {
-        if self.cities.isEmpty {
+        if cities.isEmpty {
             CityStorage.loadAll()
         }
         
-        return self.cities.randomElement()
+        return cities.randomElement()
     }
     
 }

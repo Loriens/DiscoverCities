@@ -15,12 +15,12 @@ struct CityResponse: Codable {
     var lng: String?
     
     func defaultMapping() -> City? {
-        guard let lat = Double(self.lat ?? ""),
-            let lng = Double(self.lng ?? "") else {
+        guard let lat = Double(lat ?? ""),
+            let lng = Double(lng ?? "") else {
                 return nil
         }
         
-        return City(name: self.name ?? "", lat: lat, lng: lng)
+        return City(name: name ?? "", lat: lat, lng: lng)
     }
     
 }

@@ -23,7 +23,7 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
     func loadData() {
         guard let city = CityStorage.getRandomCity() else { return }
         
-        self.getPhotos(city: city)
+        getPhotos(city: city)
     }
     
     // MARK: - Module functions
@@ -58,8 +58,8 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
     }
     
     func providePhotos(city: City, photos: [URL]) {
-        self.view?.updateCity(with: city)
-        self.view?.updatePhotoSlider(with: photos)
+        view?.updateCity(with: city)
+        view?.updatePhotoSlider(with: photos)
     }
     
     func provideError(with error: Error?) { }

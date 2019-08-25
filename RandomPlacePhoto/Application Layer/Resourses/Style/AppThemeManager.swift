@@ -30,7 +30,7 @@ enum AppThemeType: String {
     }
     
     var key: String {
-        return self.rawValue
+        return rawValue
     }
     
     var title: String {
@@ -64,7 +64,7 @@ class AppThemeManager {
     
     // MARK: - Accessor
     public static var current: AppThemeManager {
-        return self.currentTheme
+        return currentTheme
     }
     
     // MARK: - Supported themes
@@ -76,7 +76,7 @@ class AppThemeManager {
     private var currentType: AppThemeType
     
     public var type: AppThemeType {
-        return self.currentType
+        return currentType
     }
     
     // MARK: - Public functions

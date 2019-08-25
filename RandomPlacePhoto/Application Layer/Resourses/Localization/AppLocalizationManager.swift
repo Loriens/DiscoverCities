@@ -45,7 +45,7 @@ enum AppLocalizationType: String {
     }
     
     var key: String {
-        return self.rawValue
+        return rawValue
     }
     
     var languageKey: String {
@@ -102,7 +102,7 @@ class AppLocalizationManager {
     
     // MARK: - Accessor
     public static var current: AppLocalizationManager {
-        return self.currentLocalization
+        return currentLocalization
     }
     
     // MARK: - Supported localizations
@@ -114,7 +114,7 @@ class AppLocalizationManager {
     private var currentType: AppLocalizationType
     
     public var type: AppLocalizationType {
-        return self.currentType
+        return currentType
     }
     
     // MARK: - Public functions

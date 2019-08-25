@@ -18,24 +18,26 @@ class BasicNavigationController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.setupUI()
+        setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.setNeedsStatusBarAppearanceUpdate()
+        setNeedsStatusBarAppearanceUpdate()
     }
     
     private func setupUI() {
-        self.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationBar.backgroundColor = .clear
-        self.navigationBar.shadowImage = UIImage()
-        self.navigationBar.isTranslucent = true
-        self.navigationBar.tintColor = AppTheme.accentText
-        self.navigationBar.titleTextAttributes = [.font: PTRootUI.bold.font(size: 20.0),
-                                                  .foregroundColor: AppTheme.accentText]
-        self.navigationBar.prefersLargeTitles = false
+        navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationBar.backgroundColor = .clear
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = true
+        navigationBar.tintColor = AppTheme.accentText
+        navigationBar.titleTextAttributes = [
+            .font: PTRootUI.bold.font(size: 20.0),
+            .foregroundColor: AppTheme.accentText
+        ]
+        navigationBar.prefersLargeTitles = false
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

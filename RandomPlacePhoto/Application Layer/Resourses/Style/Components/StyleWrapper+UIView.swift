@@ -18,10 +18,11 @@ extension StyleWrapper where Element: UIView {
         }
     }
     
-    static func roundedStyle(radius: CGFloat = 4.0) -> StyleWrapper {
+    static func roundedStyle(radius: CGFloat = 50.0) -> StyleWrapper {
         return .wrap { view in
             view.layer.cornerRadius = radius
             view.clipsToBounds = true
         }
     }
+    
 }

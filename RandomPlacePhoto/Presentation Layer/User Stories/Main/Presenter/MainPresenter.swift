@@ -33,6 +33,7 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
         searchPhotos.page = "1"
         searchPhotos.per_page = "5"
         searchPhotos.content_type = "1"
+        searchPhotos.sort = "relevant"
         
         FlickrKit.shared().call(searchPhotos) { (response, error) in
             guard let response = response,
@@ -58,6 +59,11 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
     }
     
     func providePhotos(city: City, photos: [URL]) {
+        guard !photos.isEmpty else {
+            loadData()
+            return
+        }
+        
         view?.updateCity(with: city)
         view?.updatePhotoSlider(with: photos)
     }

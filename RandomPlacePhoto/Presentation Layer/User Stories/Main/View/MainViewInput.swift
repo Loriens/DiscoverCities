@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol MainViewInput: class {
     func updateCity(with city: City)

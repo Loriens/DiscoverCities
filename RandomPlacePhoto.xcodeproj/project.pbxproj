@@ -16,6 +16,7 @@
 		040F240323041FCA00883C5F /* CityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F240223041FCA00883C5F /* CityResponse.swift */; };
 		040F2404230425C900883C5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 040F2406230425C900883C5F /* Localizable.strings */; };
 		040F2408230426C100883C5F /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F2407230426C100883C5F /* StyleWrapper+UIView.swift */; };
+		0411E90F2312EE660084452A /* UIImageView+getScaledImageSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0411E90E2312EE660084452A /* UIImageView+getScaledImageSize.swift */; };
 		0463114F2301CA6C00C640E8 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0463114E2301CA6C00C640E8 /* AppConfiguration.swift */; };
 		046311512301CA7D00C640E8 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046311502301CA7D00C640E8 /* AppDefaults.swift */; };
 		046311572301CAAC00C640E8 /* AppAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046311562301CAAC00C640E8 /* AppAssets.swift */; };
@@ -62,6 +63,7 @@
 		040F240223041FCA00883C5F /* CityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResponse.swift; sourceTree = "<group>"; };
 		040F2405230425C900883C5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		040F2407230426C100883C5F /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
+		0411E90E2312EE660084452A /* UIImageView+getScaledImageSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+getScaledImageSize.swift"; sourceTree = "<group>"; };
 		0463114E2301CA6C00C640E8 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 		046311502301CA7D00C640E8 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		046311562301CAAC00C640E8 /* AppAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssets.swift; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				0473F52923033C56005412BF /* String+className.swift */,
 				0463118B2301CDD300C640E8 /* UIColor+hex.swift */,
 				0473F52B23033CCE005412BF /* UIViewController+identifier.swift */,
+				0411E90E2312EE660084452A /* UIImageView+getScaledImageSize.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -557,6 +560,7 @@
 				0463114F2301CA6C00C640E8 /* AppConfiguration.swift in Sources */,
 				0406C9EE2301C8860075A96B /* AppDelegate.swift in Sources */,
 				046311572301CAAC00C640E8 /* AppAssets.swift in Sources */,
+				0411E90F2312EE660084452A /* UIImageView+getScaledImageSize.swift in Sources */,
 				046311512301CA7D00C640E8 /* AppDefaults.swift in Sources */,
 				046311732301CC3C00C640E8 /* PTRootUI.swift in Sources */,
 				0473F51723032199005412BF /* MainPresenterOutput.swift in Sources */,

@@ -117,7 +117,9 @@ extension MainViewController {
                 guard let imageView = self?.createImageViewForPhoto() else { return }
                 
                 imageView.kf.setImage(with: url) { _ in
-                    imageView.setNeedsLayout()
+                    imageView.setNeedsDisplay()
+                    imageView.frame = imageView.getScaledImageSize() ?? CGRect(x: 0, y: 0, width: 0, height: 0)
+                    imageView.apply(.roundedStyle())
                 }
             }
         }

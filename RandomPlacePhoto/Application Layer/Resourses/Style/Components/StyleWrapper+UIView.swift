@@ -10,15 +10,18 @@ import UIKit
 
 extension StyleWrapper where Element: UIView {
     
+    static private var defaultCornerRadius: CGFloat {
+        return 30.0
+    }
+    
     static func infoStyle() -> StyleWrapper {
         return .wrap { view in
-            view.layer.cornerRadius = 50.0
-            view.clipsToBounds = true
+            view.apply(.roundedStyle())
             view.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         }
     }
     
-    static func roundedStyle(radius: CGFloat = 50.0) -> StyleWrapper {
+    static func roundedStyle(radius: CGFloat = defaultCornerRadius) -> StyleWrapper {
         return .wrap { view in
             view.layer.cornerRadius = radius
             view.clipsToBounds = true

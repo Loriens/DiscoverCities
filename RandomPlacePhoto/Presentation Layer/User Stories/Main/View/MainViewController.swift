@@ -9,6 +9,7 @@
 import UIKit
 import Kingfisher
 
+// TODO: - Сделать красивую кнопку настроек
 class MainViewController: UIViewController, MainViewInput {
 
     // MARK: - Outlets
@@ -22,12 +23,14 @@ class MainViewController: UIViewController, MainViewInput {
     private var removedView: UIView?
     private var photosURLs: [URL] = []
     private var photosImageViews: [UIImageView] = []
+    private var loader: Loader?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        output?.loadData()
+        loader = Loader(view: view)
+        loadData()
         
         setupComponents()
         setupActions()
@@ -41,6 +44,8 @@ class MainViewController: UIViewController, MainViewInput {
     func setupComponents() {
         view.backgroundColor = AppTheme.backgroundMain
         nextCityButton.setTitle(AppLocalization.General.next.localized, for: .normal)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: AppAssets.humburgerMenu, style: .plain, target: self, action: #selector(showSettings))
     }
     
     func setupActions() {
@@ -67,10 +72,19 @@ class MainViewController: UIViewController, MainViewInput {
         addPhotos()
     }
     
+    func loadDataError() {
+        loader?.hide()
+    }
+    
 }
 
 // MARK: - Actions
 extension MainViewController {
+    
+    @objc
+    func showSettings() {
+        output?.showSettings()
+    }
     
     @objc
     func imageViewPanGestureHandler(recognizer: UIPanGestureRecognizer) {
@@ -91,13 +105,13 @@ extension MainViewController {
             guard let view = recognizer.view as? UIImageView,
                 photosImageViews.contains(view) else {
                     clearData()
-                    output?.loadData()
+                    loadData()
                     return
             }
             photosImageViews.removeAll(where: { $0 == view })
             
             if photosImageViews.isEmpty {
-                output?.loadData()
+                loadData()
             }
         } else if recognizer.state == .ended {
             UIView.animate(withDuration: 0.2, animations: {
@@ -114,7 +128,7 @@ extension MainViewController {
     @objc
     private func nextButtonPressed() {
         clearData()
-        output?.loadData()
+        loadData()
     }
     
     @objc
@@ -130,6 +144,11 @@ extension MainViewController {
 // MARK: - Module functions
 extension MainViewController {
     
+    func loadData() {
+        loader?.show()
+        output?.loadData()
+    }
+    
     func addPhotos() {
         while !photosURLs.isEmpty {
             let url = photosURLs.removeFirst()
@@ -144,6 +163,8 @@ extension MainViewController {
                 }
             }
         }
+        
+        loader?.hide()
     }
     
     private func createImageViewForPhoto() -> UIImageView {

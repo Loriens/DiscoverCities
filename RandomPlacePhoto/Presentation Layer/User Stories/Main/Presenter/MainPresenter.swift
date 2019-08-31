@@ -24,16 +24,23 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
     // MARK: - MainViewOutput
     func loadData() {
         guard Reachability.isConnectedToNetwork() else {
-            Toast.instance.show(title: AppLocalization.General.error.localized, message: AppLocalization.Error.internerConnection.localized)
+            provideError(with: InternetConnectionError())
             return
         }
-        guard let city = CityStorage.getRandomCity() else { return }
+        guard let city = CityStorage.getRandomCity() else {
+            provideError(with: nil)
+            return
+        }
         
         getPhotos(city: city)
     }
     
     func selectImage(with image: UIImage) {
         router?.presentPhotoViewController(with: image)
+    }
+    
+    func showSettings() {
+        router?.presentSettingsViewController()
     }
     
     // MARK: - Module functions
@@ -78,7 +85,10 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
         view?.updatePhotoSlider(with: photos)
     }
     
-    func provideError(with error: Error?) { }
+    func provideError(with error: Error?) {
+        Toast.instance.show(title: AppLocalization.General.error.localized, message: error?.localizedDescription ?? "")
+        view?.loadDataError()
+    }
     
     func fixPhotoUrl(url: URL) -> URL {
         var absouluteUrl = url.absoluteString

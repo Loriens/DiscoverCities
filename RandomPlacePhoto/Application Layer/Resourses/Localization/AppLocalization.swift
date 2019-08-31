@@ -16,6 +16,7 @@ enum AppLocalization {
         case cancel = "Cancel"
         case next = "Next"
         case error = "Error"
+        case close = "Close"
     }
     
     enum Theme: String, Localizable {
@@ -34,6 +35,10 @@ enum AppLocalization {
     
     enum Main: String, Localizable {
         case nextCity = "MainNextCityTitle"
+    }
+    
+    enum Settings: String, Localizable {
+        case privacyPolicy = "SettingsPrivacyPolicy"
     }
     
 }

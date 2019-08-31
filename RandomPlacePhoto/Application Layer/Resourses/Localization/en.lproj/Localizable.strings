@@ -12,6 +12,7 @@
 "Cancel" = "Cancel";
 "Next" = "Next";
 "Error" = "Error";
+"Close" = "Close";
 
 // MARK: - Темы и языки
 "AppThemeLight" = "Light";
@@ -25,3 +26,6 @@
 
 // MARK: - Главная
 "MainNextCityTitle" = "Next city";
+
+// MARK: - Настройки
+"SettingsPrivacyPolicy" = "Privacy Policy";

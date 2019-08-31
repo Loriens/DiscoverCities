@@ -11,4 +11,5 @@ import UIKit
 protocol MainViewOutput {
     func loadData()
     func selectImage(with image: UIImage)
+    func showSettings()
 }

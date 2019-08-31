@@ -8,4 +8,10 @@
 
 import UIKit
 
-enum AppAssets { }
+enum AppAssets {
+    
+    static var humburgerMenu: UIImage? {
+        return UIImage(named: "humburgerMenu")
+    }
+    
+}

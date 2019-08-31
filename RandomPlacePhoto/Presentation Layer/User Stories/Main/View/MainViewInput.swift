@@ -12,4 +12,5 @@ import UIKit
 protocol MainViewInput: class {
     func updateCity(with city: City)
     func updatePhotoSlider(with photos: [URL])
+    func loadDataError()
 }

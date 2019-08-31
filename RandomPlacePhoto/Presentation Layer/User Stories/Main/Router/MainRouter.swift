@@ -29,5 +29,16 @@ class MainRouter: MainRouterInput {
         view?.navigationController?.present(nc, animated: true, completion: nil)
     }
     
+    func presentSettingsViewController() {
+        let vc = SettingsConfigurator.create()
+        _ = SettingsConfigurator.configure(with: vc)
+        
+        let nc = BasicNavigationController(rootViewController: vc)
+        nc.modalPresentationStyle = .overFullScreen
+        nc.modalTransitionStyle = .crossDissolve
+        
+        view?.navigationController?.present(nc, animated: true, completion: nil)
+    }
+    
     // MARK: - Module functions
 }

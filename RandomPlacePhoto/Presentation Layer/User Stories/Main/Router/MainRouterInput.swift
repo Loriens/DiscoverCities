@@ -10,4 +10,5 @@ import UIKit
 
 protocol MainRouterInput: class {
     func presentPhotoViewController(with image: UIImage?)
+    func presentSettingsViewController()
 }

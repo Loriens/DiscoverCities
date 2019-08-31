@@ -28,6 +28,7 @@ class Loader {
         let y: CGFloat = top
         let indicator = NVActivityIndicatorView(frame: CGRect(x: x, y: y, width: width, height: height))
         view.addSubview(indicator)
+        indicator.color = AppTheme.accentMain
         self.indicator = indicator
         self.hide()
     }

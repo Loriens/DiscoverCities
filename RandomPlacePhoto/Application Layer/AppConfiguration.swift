@@ -18,4 +18,8 @@ enum AppConfiguration {
         return "541d585be5aecc62"
     }
     
+    static var privacyPolicyUrl: String {
+        return "http://www.africau.edu/images/default/sample.pdf"
+    }
+    
 }

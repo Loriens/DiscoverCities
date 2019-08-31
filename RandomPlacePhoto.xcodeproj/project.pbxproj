@@ -62,6 +62,28 @@
 		0473F51F23032199005412BF /* MainConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473F51523032199005412BF /* MainConfigurator.swift */; };
 		0473F52A23033C56005412BF /* String+className.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473F52923033C56005412BF /* String+className.swift */; };
 		0473F52C23033CCE005412BF /* UIViewController+identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473F52B23033CCE005412BF /* UIViewController+identifier.swift */; };
+		04AD436F231AB86A008BBEE3 /* InternetConnectionError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD436E231AB86A008BBEE3 /* InternetConnectionError.swift */; };
+		04AD4386231AC1BA008BBEE3 /* SettingsPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD4379231AC1BA008BBEE3 /* SettingsPresenterInput.swift */; };
+		04AD4387231AC1BA008BBEE3 /* SettingsPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD437A231AC1BA008BBEE3 /* SettingsPresenterOutput.swift */; };
+		04AD4388231AC1BA008BBEE3 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD437B231AC1BA008BBEE3 /* SettingsPresenter.swift */; };
+		04AD4389231AC1BA008BBEE3 /* SettingsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD437D231AC1BA008BBEE3 /* SettingsConfigurator.swift */; };
+		04AD438A231AC1BA008BBEE3 /* SettingsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD437F231AC1BA008BBEE3 /* SettingsRouter.swift */; };
+		04AD438B231AC1BA008BBEE3 /* SettingsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD4380231AC1BA008BBEE3 /* SettingsRouterInput.swift */; };
+		04AD438C231AC1BA008BBEE3 /* SettingsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD4382231AC1BA008BBEE3 /* SettingsViewOutput.swift */; };
+		04AD438D231AC1BA008BBEE3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AD4383231AC1BA008BBEE3 /* SettingsViewController.xib */; };
+		04AD438E231AC1BA008BBEE3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD4384231AC1BA008BBEE3 /* SettingsViewController.swift */; };
+		04AD438F231AC1BA008BBEE3 /* SettingsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD4385231AC1BA008BBEE3 /* SettingsViewInput.swift */; };
+		04AD43A7231AC553008BBEE3 /* SafariPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD439A231AC553008BBEE3 /* SafariPresenter.swift */; };
+		04AD43A8231AC553008BBEE3 /* SafariPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD439B231AC553008BBEE3 /* SafariPresenterOutput.swift */; };
+		04AD43A9231AC553008BBEE3 /* SafariPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD439C231AC553008BBEE3 /* SafariPresenterInput.swift */; };
+		04AD43AA231AC553008BBEE3 /* SafariConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD439E231AC553008BBEE3 /* SafariConfigurator.swift */; };
+		04AD43AB231AC553008BBEE3 /* SafariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD43A0231AC553008BBEE3 /* SafariViewController.swift */; };
+		04AD43AC231AC553008BBEE3 /* SafariViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04AD43A1231AC553008BBEE3 /* SafariViewController.xib */; };
+		04AD43AD231AC553008BBEE3 /* SafariViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD43A2231AC553008BBEE3 /* SafariViewOutput.swift */; };
+		04AD43AE231AC553008BBEE3 /* SafariViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD43A3231AC553008BBEE3 /* SafariViewInput.swift */; };
+		04AD43AF231AC553008BBEE3 /* SafariRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD43A5231AC553008BBEE3 /* SafariRouterInput.swift */; };
+		04AD43B0231AC553008BBEE3 /* SafariRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD43A6231AC553008BBEE3 /* SafariRouter.swift */; };
+		04AD43B3231AC5F0008BBEE3 /* Site.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AD43B2231AC5F0008BBEE3 /* Site.swift */; };
 		04B6137223131BB30099525D /* StyleWrapper+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B6137123131BB30099525D /* StyleWrapper+UIButton.swift */; };
 		8FBB3C8E0B415FED3B9ADB94 /* Pods_RandomPlacePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8ED9F7363EE3990618BFB /* Pods_RandomPlacePhoto.framework */; };
 /* End PBXBuildFile section */
@@ -124,6 +146,28 @@
 		0473F51523032199005412BF /* MainConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainConfigurator.swift; sourceTree = "<group>"; };
 		0473F52923033C56005412BF /* String+className.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+className.swift"; sourceTree = "<group>"; };
 		0473F52B23033CCE005412BF /* UIViewController+identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+identifier.swift"; sourceTree = "<group>"; };
+		04AD436E231AB86A008BBEE3 /* InternetConnectionError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetConnectionError.swift; sourceTree = "<group>"; };
+		04AD4379231AC1BA008BBEE3 /* SettingsPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenterInput.swift; sourceTree = "<group>"; };
+		04AD437A231AC1BA008BBEE3 /* SettingsPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenterOutput.swift; sourceTree = "<group>"; };
+		04AD437B231AC1BA008BBEE3 /* SettingsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		04AD437D231AC1BA008BBEE3 /* SettingsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsConfigurator.swift; sourceTree = "<group>"; };
+		04AD437F231AC1BA008BBEE3 /* SettingsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouter.swift; sourceTree = "<group>"; };
+		04AD4380231AC1BA008BBEE3 /* SettingsRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsRouterInput.swift; sourceTree = "<group>"; };
+		04AD4382231AC1BA008BBEE3 /* SettingsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewOutput.swift; sourceTree = "<group>"; };
+		04AD4383231AC1BA008BBEE3 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		04AD4384231AC1BA008BBEE3 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		04AD4385231AC1BA008BBEE3 /* SettingsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewInput.swift; sourceTree = "<group>"; };
+		04AD439A231AC553008BBEE3 /* SafariPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenter.swift; sourceTree = "<group>"; };
+		04AD439B231AC553008BBEE3 /* SafariPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenterOutput.swift; sourceTree = "<group>"; };
+		04AD439C231AC553008BBEE3 /* SafariPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariPresenterInput.swift; sourceTree = "<group>"; };
+		04AD439E231AC553008BBEE3 /* SafariConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariConfigurator.swift; sourceTree = "<group>"; };
+		04AD43A0231AC553008BBEE3 /* SafariViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewController.swift; sourceTree = "<group>"; };
+		04AD43A1231AC553008BBEE3 /* SafariViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SafariViewController.xib; sourceTree = "<group>"; };
+		04AD43A2231AC553008BBEE3 /* SafariViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewOutput.swift; sourceTree = "<group>"; };
+		04AD43A3231AC553008BBEE3 /* SafariViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariViewInput.swift; sourceTree = "<group>"; };
+		04AD43A5231AC553008BBEE3 /* SafariRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariRouterInput.swift; sourceTree = "<group>"; };
+		04AD43A6231AC553008BBEE3 /* SafariRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariRouter.swift; sourceTree = "<group>"; };
+		04AD43B2231AC5F0008BBEE3 /* Site.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Site.swift; sourceTree = "<group>"; };
 		04B6137123131BB30099525D /* StyleWrapper+UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIButton.swift"; sourceTree = "<group>"; };
 		3918795E5080120FA7E068E4 /* Pods-RandomPlacePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPlacePhoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomPlacePhoto/Pods-RandomPlacePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 		50E8ED9F7363EE3990618BFB /* Pods_RandomPlacePhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomPlacePhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -213,8 +257,8 @@
 		040930A8231A7A2F00C0EF8F /* View Helper */ = {
 			isa = PBXGroup;
 			children = (
-				040930A9231A7A6800C0EF8F /* Toast.swift */,
 				040930AB231A7A7400C0EF8F /* Loader.swift */,
+				040930A9231A7A6800C0EF8F /* Toast.swift */,
 			);
 			path = "View Helper";
 			sourceTree = "<group>";
@@ -293,6 +337,8 @@
 			isa = PBXGroup;
 			children = (
 				040508E52302CDFE00B958C8 /* City */,
+				04AD436D231AB85C008BBEE3 /* Errors */,
+				04AD43B1231AC5E5008BBEE3 /* Site */,
 			);
 			path = "Data Layer";
 			sourceTree = "<group>";
@@ -352,8 +398,8 @@
 		046311552301CA9C00C640E8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0406C9F42301C8880075A96B /* Assets.xcassets */,
 				046311562301CAAC00C640E8 /* AppAssets.swift */,
+				0406C9F42301C8880075A96B /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -397,6 +443,8 @@
 		046311832301CCF900C640E8 /* User Stories */ = {
 			isa = PBXGroup;
 			children = (
+				04AD4390231AC539008BBEE3 /* Safari */,
+				04AD436C231AB651008BBEE3 /* Settings */,
 				040508EB230310D200B958C8 /* Main */,
 				040930B0231A7E2700C0EF8F /* Photo */,
 			);
@@ -462,6 +510,120 @@
 				0473F51523032199005412BF /* MainConfigurator.swift */,
 			);
 			path = Configurator;
+			sourceTree = "<group>";
+		};
+		04AD436C231AB651008BBEE3 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				04AD437C231AC1BA008BBEE3 /* Configurator */,
+				04AD4378231AC1BA008BBEE3 /* Presenter */,
+				04AD437E231AC1BA008BBEE3 /* Router */,
+				04AD4381231AC1BA008BBEE3 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		04AD436D231AB85C008BBEE3 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				04AD436E231AB86A008BBEE3 /* InternetConnectionError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		04AD4378231AC1BA008BBEE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04AD437B231AC1BA008BBEE3 /* SettingsPresenter.swift */,
+				04AD4379231AC1BA008BBEE3 /* SettingsPresenterInput.swift */,
+				04AD437A231AC1BA008BBEE3 /* SettingsPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04AD437C231AC1BA008BBEE3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				04AD437D231AC1BA008BBEE3 /* SettingsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		04AD437E231AC1BA008BBEE3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				04AD437F231AC1BA008BBEE3 /* SettingsRouter.swift */,
+				04AD4380231AC1BA008BBEE3 /* SettingsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		04AD4381231AC1BA008BBEE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04AD4384231AC1BA008BBEE3 /* SettingsViewController.swift */,
+				04AD4383231AC1BA008BBEE3 /* SettingsViewController.xib */,
+				04AD4385231AC1BA008BBEE3 /* SettingsViewInput.swift */,
+				04AD4382231AC1BA008BBEE3 /* SettingsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04AD4390231AC539008BBEE3 /* Safari */ = {
+			isa = PBXGroup;
+			children = (
+				04AD439D231AC553008BBEE3 /* Configurator */,
+				04AD4399231AC553008BBEE3 /* Presenter */,
+				04AD43A4231AC553008BBEE3 /* Router */,
+				04AD439F231AC553008BBEE3 /* View */,
+			);
+			path = Safari;
+			sourceTree = "<group>";
+		};
+		04AD4399231AC553008BBEE3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				04AD439A231AC553008BBEE3 /* SafariPresenter.swift */,
+				04AD439C231AC553008BBEE3 /* SafariPresenterInput.swift */,
+				04AD439B231AC553008BBEE3 /* SafariPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		04AD439D231AC553008BBEE3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				04AD439E231AC553008BBEE3 /* SafariConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		04AD439F231AC553008BBEE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04AD43A0231AC553008BBEE3 /* SafariViewController.swift */,
+				04AD43A1231AC553008BBEE3 /* SafariViewController.xib */,
+				04AD43A3231AC553008BBEE3 /* SafariViewInput.swift */,
+				04AD43A2231AC553008BBEE3 /* SafariViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04AD43A4231AC553008BBEE3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				04AD43A6231AC553008BBEE3 /* SafariRouter.swift */,
+				04AD43A5231AC553008BBEE3 /* SafariRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		04AD43B1231AC5E5008BBEE3 /* Site */ = {
+			isa = PBXGroup;
+			children = (
+				04AD43B2231AC5F0008BBEE3 /* Site.swift */,
+			);
+			path = Site;
 			sourceTree = "<group>";
 		};
 		484F88B0D5CD1DA9A0752097 /* Pods */ = {
@@ -544,6 +706,8 @@
 			files = (
 				046311762301CC3C00C640E8 /* PT Root UI_Bold.otf in Resources */,
 				040930CC231A7E5600C0EF8F /* PhotoViewController.xib in Resources */,
+				04AD43AC231AC553008BBEE3 /* SafariViewController.xib in Resources */,
+				04AD438D231AC1BA008BBEE3 /* SettingsViewController.xib in Resources */,
 				046311742301CC3C00C640E8 /* PT Root UI_Light.otf in Resources */,
 				046311752301CC3C00C640E8 /* PT Root UI_Regular.otf in Resources */,
 				0406C9F82301C8880075A96B /* LaunchScreen.storyboard in Resources */,
@@ -634,8 +798,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04AD4386231AC1BA008BBEE3 /* SettingsPresenterInput.swift in Sources */,
 				0473F52C23033CCE005412BF /* UIViewController+identifier.swift in Sources */,
 				046311882301CD8F00C640E8 /* Reachability.swift in Sources */,
+				04AD4387231AC1BA008BBEE3 /* SettingsPresenterOutput.swift in Sources */,
+				04AD436F231AB86A008BBEE3 /* InternetConnectionError.swift in Sources */,
 				0473F51E23032199005412BF /* MainViewController.swift in Sources */,
 				0473F51F23032199005412BF /* MainConfigurator.swift in Sources */,
 				046311812301CCAD00C640E8 /* StyleWrapper+UILabel.swift in Sources */,
@@ -644,26 +811,35 @@
 				040508E72302CE0C00B958C8 /* CityStorage.swift in Sources */,
 				0463115D2301CBB100C640E8 /* Localizable.swift in Sources */,
 				046311592301CB9F00C640E8 /* AppLocalization.swift in Sources */,
+				04AD438E231AC1BA008BBEE3 /* SettingsViewController.swift in Sources */,
+				04AD43A9231AC553008BBEE3 /* SafariPresenterInput.swift in Sources */,
+				04AD438B231AC1BA008BBEE3 /* SettingsRouterInput.swift in Sources */,
 				0463118A2301CDA800C640E8 /* BasicNavigationController.swift in Sources */,
 				040F2408230426C100883C5F /* StyleWrapper+UIView.swift in Sources */,
+				04AD43A8231AC553008BBEE3 /* SafariPresenterOutput.swift in Sources */,
 				0473F51623032199005412BF /* MainPresenter.swift in Sources */,
 				0463117D2301CC8C00C640E8 /* Stylable.swift in Sources */,
 				0463117B2301CC5E00C640E8 /* AppThemeManager.swift in Sources */,
 				0473F51923032199005412BF /* MainRouterInput.swift in Sources */,
 				046311792301CC5300C640E8 /* AppTheme.swift in Sources */,
 				0463118C2301CDD300C640E8 /* UIColor+hex.swift in Sources */,
+				04AD43AF231AC553008BBEE3 /* SafariRouterInput.swift in Sources */,
 				04B6137223131BB30099525D /* StyleWrapper+UIButton.swift in Sources */,
 				040930AC231A7A7400C0EF8F /* Loader.swift in Sources */,
+				04AD438C231AC1BA008BBEE3 /* SettingsViewOutput.swift in Sources */,
 				040930AA231A7A6800C0EF8F /* Toast.swift in Sources */,
 				040930CF231A7E5600C0EF8F /* PhotoViewController.swift in Sources */,
 				040930CB231A7E5600C0EF8F /* PhotoRouter.swift in Sources */,
 				040930C8231A7E5600C0EF8F /* PhotoPresenter.swift in Sources */,
 				0473F51B23032199005412BF /* MainViewInput.swift in Sources */,
 				0463114F2301CA6C00C640E8 /* AppConfiguration.swift in Sources */,
+				04AD4388231AC1BA008BBEE3 /* SettingsPresenter.swift in Sources */,
 				0406C9EE2301C8860075A96B /* AppDelegate.swift in Sources */,
 				046311572301CAAC00C640E8 /* AppAssets.swift in Sources */,
 				0411E90F2312EE660084452A /* UIImageView+getScaledImageSize.swift in Sources */,
+				04AD4389231AC1BA008BBEE3 /* SettingsConfigurator.swift in Sources */,
 				046311512301CA7D00C640E8 /* AppDefaults.swift in Sources */,
+				04AD43B0231AC553008BBEE3 /* SafariRouter.swift in Sources */,
 				040930CA231A7E5600C0EF8F /* PhotoRouterInput.swift in Sources */,
 				040930CD231A7E5600C0EF8F /* PhotoViewInput.swift in Sources */,
 				040930C7231A7E5600C0EF8F /* PhotoPresenterOutput.swift in Sources */,
@@ -672,13 +848,21 @@
 				040930AE231A7CC100C0EF8F /* AdditionalSearchKey.swift in Sources */,
 				040359F2231A9BF300F16404 /* Data+dataToFile.swift in Sources */,
 				0473F51723032199005412BF /* MainPresenterOutput.swift in Sources */,
+				04AD43AA231AC553008BBEE3 /* SafariConfigurator.swift in Sources */,
+				04AD438F231AC1BA008BBEE3 /* SettingsViewInput.swift in Sources */,
 				040930C9231A7E5600C0EF8F /* PhotoPresenterInput.swift in Sources */,
+				04AD43AD231AC553008BBEE3 /* SafariViewOutput.swift in Sources */,
 				040930CE231A7E5600C0EF8F /* PhotoViewOutput.swift in Sources */,
+				04AD43AE231AC553008BBEE3 /* SafariViewInput.swift in Sources */,
+				04AD43AB231AC553008BBEE3 /* SafariViewController.swift in Sources */,
 				0473F51D23032199005412BF /* MainViewOutput.swift in Sources */,
 				040F240323041FCA00883C5F /* CityResponse.swift in Sources */,
 				0463117F2301CC9200C640E8 /* StyleWrapper.swift in Sources */,
 				0473F51823032199005412BF /* MainPresenterInput.swift in Sources */,
+				04AD438A231AC1BA008BBEE3 /* SettingsRouter.swift in Sources */,
 				0473F52A23033C56005412BF /* String+className.swift in Sources */,
+				04AD43A7231AC553008BBEE3 /* SafariPresenter.swift in Sources */,
+				04AD43B3231AC5F0008BBEE3 /* Site.swift in Sources */,
 				0473F51A23032199005412BF /* MainRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

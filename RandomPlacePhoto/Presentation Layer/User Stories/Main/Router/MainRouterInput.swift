@@ -6,4 +6,8 @@
 //  Copyright © 2019 Vladislav Markov. All rights reserved.
 //
 
-protocol MainRouterInput: class { }
+import UIKit
+
+protocol MainRouterInput: class {
+    func presentPhotoViewController(with image: UIImage?)
+}

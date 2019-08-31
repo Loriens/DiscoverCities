@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		040359F2231A9BF300F16404 /* Data+dataToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040359F1231A9BF300F16404 /* Data+dataToFile.swift */; };
 		040508E42302CBD500B958C8 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 040508E32302CBD500B958C8 /* cities.json */; };
 		040508E72302CE0C00B958C8 /* CityStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040508E62302CE0C00B958C8 /* CityStorage.swift */; };
 		040508EA2302CE6600B958C8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040508E92302CE6600B958C8 /* City.swift */; };
 		0406C9EE2301C8860075A96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0406C9ED2301C8860075A96B /* AppDelegate.swift */; };
 		0406C9F52301C8880075A96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0406C9F42301C8880075A96B /* Assets.xcassets */; };
 		0406C9F82301C8880075A96B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0406C9F62301C8880075A96B /* LaunchScreen.storyboard */; };
+		040930AA231A7A6800C0EF8F /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930A9231A7A6800C0EF8F /* Toast.swift */; };
+		040930AC231A7A7400C0EF8F /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930AB231A7A7400C0EF8F /* Loader.swift */; };
+		040930AE231A7CC100C0EF8F /* AdditionalSearchKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930AD231A7CC100C0EF8F /* AdditionalSearchKey.swift */; };
+		040930C7231A7E5600C0EF8F /* PhotoPresenterOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930BA231A7E5600C0EF8F /* PhotoPresenterOutput.swift */; };
+		040930C8231A7E5600C0EF8F /* PhotoPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930BB231A7E5600C0EF8F /* PhotoPresenter.swift */; };
+		040930C9231A7E5600C0EF8F /* PhotoPresenterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930BC231A7E5600C0EF8F /* PhotoPresenterInput.swift */; };
+		040930CA231A7E5600C0EF8F /* PhotoRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930BE231A7E5600C0EF8F /* PhotoRouterInput.swift */; };
+		040930CB231A7E5600C0EF8F /* PhotoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930BF231A7E5600C0EF8F /* PhotoRouter.swift */; };
+		040930CC231A7E5600C0EF8F /* PhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 040930C1231A7E5600C0EF8F /* PhotoViewController.xib */; };
+		040930CD231A7E5600C0EF8F /* PhotoViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930C2231A7E5600C0EF8F /* PhotoViewInput.swift */; };
+		040930CE231A7E5600C0EF8F /* PhotoViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930C3231A7E5600C0EF8F /* PhotoViewOutput.swift */; };
+		040930CF231A7E5600C0EF8F /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930C4231A7E5600C0EF8F /* PhotoViewController.swift */; };
+		040930D0231A7E5600C0EF8F /* PhotoConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040930C6231A7E5600C0EF8F /* PhotoConfigurator.swift */; };
 		040F240323041FCA00883C5F /* CityResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F240223041FCA00883C5F /* CityResponse.swift */; };
 		040F2404230425C900883C5F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 040F2406230425C900883C5F /* Localizable.strings */; };
 		040F2408230426C100883C5F /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040F2407230426C100883C5F /* StyleWrapper+UIView.swift */; };
@@ -53,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		040359F1231A9BF300F16404 /* Data+dataToFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+dataToFile.swift"; sourceTree = "<group>"; };
 		040508E32302CBD500B958C8 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cities.json; sourceTree = "<group>"; };
 		040508E62302CE0C00B958C8 /* CityStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityStorage.swift; sourceTree = "<group>"; };
 		040508E92302CE6600B958C8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
@@ -61,6 +76,19 @@
 		0406C9F42301C8880075A96B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0406C9F72301C8880075A96B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0406C9F92301C8880075A96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		040930A9231A7A6800C0EF8F /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		040930AB231A7A7400C0EF8F /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		040930AD231A7CC100C0EF8F /* AdditionalSearchKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionalSearchKey.swift; sourceTree = "<group>"; };
+		040930BA231A7E5600C0EF8F /* PhotoPresenterOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPresenterOutput.swift; sourceTree = "<group>"; };
+		040930BB231A7E5600C0EF8F /* PhotoPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPresenter.swift; sourceTree = "<group>"; };
+		040930BC231A7E5600C0EF8F /* PhotoPresenterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPresenterInput.swift; sourceTree = "<group>"; };
+		040930BE231A7E5600C0EF8F /* PhotoRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRouterInput.swift; sourceTree = "<group>"; };
+		040930BF231A7E5600C0EF8F /* PhotoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoRouter.swift; sourceTree = "<group>"; };
+		040930C1231A7E5600C0EF8F /* PhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoViewController.xib; sourceTree = "<group>"; };
+		040930C2231A7E5600C0EF8F /* PhotoViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewInput.swift; sourceTree = "<group>"; };
+		040930C3231A7E5600C0EF8F /* PhotoViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewOutput.swift; sourceTree = "<group>"; };
+		040930C4231A7E5600C0EF8F /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		040930C6231A7E5600C0EF8F /* PhotoConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoConfigurator.swift; sourceTree = "<group>"; };
 		040F240223041FCA00883C5F /* CityResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityResponse.swift; sourceTree = "<group>"; };
 		040F2405230425C900883C5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		040F2407230426C100883C5F /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
@@ -134,6 +162,7 @@
 		040508E82302CE5F00B958C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				040930AD231A7CC100C0EF8F /* AdditionalSearchKey.swift */,
 				040508E92302CE6600B958C8 /* City.swift */,
 				040F240223041FCA00883C5F /* CityResponse.swift */,
 			);
@@ -181,6 +210,64 @@
 			path = RandomPlacePhoto;
 			sourceTree = "<group>";
 		};
+		040930A8231A7A2F00C0EF8F /* View Helper */ = {
+			isa = PBXGroup;
+			children = (
+				040930A9231A7A6800C0EF8F /* Toast.swift */,
+				040930AB231A7A7400C0EF8F /* Loader.swift */,
+			);
+			path = "View Helper";
+			sourceTree = "<group>";
+		};
+		040930B0231A7E2700C0EF8F /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				040930C5231A7E5600C0EF8F /* Configurator */,
+				040930B9231A7E5600C0EF8F /* Presenter */,
+				040930BD231A7E5600C0EF8F /* Router */,
+				040930C0231A7E5600C0EF8F /* View */,
+			);
+			path = Photo;
+			sourceTree = "<group>";
+		};
+		040930B9231A7E5600C0EF8F /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				040930BB231A7E5600C0EF8F /* PhotoPresenter.swift */,
+				040930BC231A7E5600C0EF8F /* PhotoPresenterInput.swift */,
+				040930BA231A7E5600C0EF8F /* PhotoPresenterOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		040930BD231A7E5600C0EF8F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				040930BF231A7E5600C0EF8F /* PhotoRouter.swift */,
+				040930BE231A7E5600C0EF8F /* PhotoRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		040930C0231A7E5600C0EF8F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				040930C4231A7E5600C0EF8F /* PhotoViewController.swift */,
+				040930C1231A7E5600C0EF8F /* PhotoViewController.xib */,
+				040930C2231A7E5600C0EF8F /* PhotoViewInput.swift */,
+				040930C3231A7E5600C0EF8F /* PhotoViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		040930C5231A7E5600C0EF8F /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				040930C6231A7E5600C0EF8F /* PhotoConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		046311492301CA1E00C640E8 /* Application Layer */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +310,7 @@
 		0463114D2301CA3700C640E8 /* Service Layer */ = {
 			isa = PBXGroup;
 			children = (
+				040930A8231A7A2F00C0EF8F /* View Helper */,
 				046311862301CD8500C640E8 /* Network */,
 			);
 			path = "Service Layer";
@@ -297,6 +385,7 @@
 		046311822301CCBC00C640E8 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				040359F1231A9BF300F16404 /* Data+dataToFile.swift */,
 				0473F52923033C56005412BF /* String+className.swift */,
 				0463118B2301CDD300C640E8 /* UIColor+hex.swift */,
 				0411E90E2312EE660084452A /* UIImageView+getScaledImageSize.swift */,
@@ -309,6 +398,7 @@
 			isa = PBXGroup;
 			children = (
 				040508EB230310D200B958C8 /* Main */,
+				040930B0231A7E2700C0EF8F /* Photo */,
 			);
 			path = "User Stories";
 			sourceTree = "<group>";
@@ -453,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				046311762301CC3C00C640E8 /* PT Root UI_Bold.otf in Resources */,
+				040930CC231A7E5600C0EF8F /* PhotoViewController.xib in Resources */,
 				046311742301CC3C00C640E8 /* PT Root UI_Light.otf in Resources */,
 				046311752301CC3C00C640E8 /* PT Root UI_Regular.otf in Resources */,
 				0406C9F82301C8880075A96B /* LaunchScreen.storyboard in Resources */,
@@ -519,6 +610,7 @@
 				"${BUILT_PRODUCTS_DIR}/FlickrKit/FlickrKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -528,6 +620,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlickrKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -560,14 +653,27 @@
 				046311792301CC5300C640E8 /* AppTheme.swift in Sources */,
 				0463118C2301CDD300C640E8 /* UIColor+hex.swift in Sources */,
 				04B6137223131BB30099525D /* StyleWrapper+UIButton.swift in Sources */,
+				040930AC231A7A7400C0EF8F /* Loader.swift in Sources */,
+				040930AA231A7A6800C0EF8F /* Toast.swift in Sources */,
+				040930CF231A7E5600C0EF8F /* PhotoViewController.swift in Sources */,
+				040930CB231A7E5600C0EF8F /* PhotoRouter.swift in Sources */,
+				040930C8231A7E5600C0EF8F /* PhotoPresenter.swift in Sources */,
 				0473F51B23032199005412BF /* MainViewInput.swift in Sources */,
 				0463114F2301CA6C00C640E8 /* AppConfiguration.swift in Sources */,
 				0406C9EE2301C8860075A96B /* AppDelegate.swift in Sources */,
 				046311572301CAAC00C640E8 /* AppAssets.swift in Sources */,
 				0411E90F2312EE660084452A /* UIImageView+getScaledImageSize.swift in Sources */,
 				046311512301CA7D00C640E8 /* AppDefaults.swift in Sources */,
+				040930CA231A7E5600C0EF8F /* PhotoRouterInput.swift in Sources */,
+				040930CD231A7E5600C0EF8F /* PhotoViewInput.swift in Sources */,
+				040930C7231A7E5600C0EF8F /* PhotoPresenterOutput.swift in Sources */,
 				046311732301CC3C00C640E8 /* PTRootUI.swift in Sources */,
+				040930D0231A7E5600C0EF8F /* PhotoConfigurator.swift in Sources */,
+				040930AE231A7CC100C0EF8F /* AdditionalSearchKey.swift in Sources */,
+				040359F2231A9BF300F16404 /* Data+dataToFile.swift in Sources */,
 				0473F51723032199005412BF /* MainPresenterOutput.swift in Sources */,
+				040930C9231A7E5600C0EF8F /* PhotoPresenterInput.swift in Sources */,
+				040930CE231A7E5600C0EF8F /* PhotoViewOutput.swift in Sources */,
 				0473F51D23032199005412BF /* MainViewOutput.swift in Sources */,
 				040F240323041FCA00883C5F /* CityResponse.swift in Sources */,
 				0463117F2301CC9200C640E8 /* StyleWrapper.swift in Sources */,
@@ -721,7 +827,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TV76LZZGYZ;
+				DEVELOPMENT_TEAM = J66DRM7UW9;
 				INFOPLIST_FILE = "$(SRCROOT)/RandomPlacePhoto/Application Layer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -741,7 +847,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = TV76LZZGYZ;
+				DEVELOPMENT_TEAM = J66DRM7UW9;
 				INFOPLIST_FILE = "$(SRCROOT)/RandomPlacePhoto/Application Layer/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -7,6 +7,7 @@
 //
 
 import FlickrKit
+import UIKit
 
 // TODO: - Добавить случайный выбор страницы при поиске новых фотографий
 class MainPresenter: MainPresenterInput, MainViewOutput {
@@ -22,15 +23,23 @@ class MainPresenter: MainPresenterInput, MainViewOutput {
     
     // MARK: - MainViewOutput
     func loadData() {
+        guard Reachability.isConnectedToNetwork() else {
+            Toast.instance.show(title: AppLocalization.General.error.localized, message: AppLocalization.Error.internerConnection.localized)
+            return
+        }
         guard let city = CityStorage.getRandomCity() else { return }
         
         getPhotos(city: city)
     }
     
+    func selectImage(with image: UIImage) {
+        router?.presentPhotoViewController(with: image)
+    }
+    
     // MARK: - Module functions
     func getPhotos(city: City) {
         let searchPhotos = FKFlickrPhotosSearch()
-        searchPhotos.text = city.name
+        searchPhotos.text = city.name + " " + AdditionalSearchKey.key
         searchPhotos.page = "1"
         searchPhotos.per_page = "5"
         searchPhotos.content_type = "1"

@@ -11,6 +11,7 @@
 "Save" = "Save";
 "Cancel" = "Cancel";
 "Next" = "Next";
+"Error" = "Error";
 
 // MARK: - Темы и языки
 "AppThemeLight" = "Light";
@@ -18,6 +19,9 @@
 
 "AppLanguageEnglish" = "English";
 "AppLanguageRussian" = "Russian";
+
+// MARK: - Ошибки
+"InternetConnectionError" = "The Internet connection appears to be offline.";
 
 // MARK: - Главная
 "MainNextCityTitle" = "Next city";

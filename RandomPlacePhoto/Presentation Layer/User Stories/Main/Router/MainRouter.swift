@@ -17,6 +17,17 @@ class MainRouter: MainRouterInput {
     init() { }
     
     // MARK: - MainRouterInput
+    func presentPhotoViewController(with image: UIImage?) {
+        let vc = PhotoConfigurator.create()
+        let moduleInput = PhotoConfigurator.configure(with: vc)
+        moduleInput.configure(with: image)
+        
+        let nc = BasicNavigationController(rootViewController: vc)
+        nc.modalPresentationStyle = .overFullScreen
+        nc.modalTransitionStyle = .crossDissolve
+        
+        view?.navigationController?.present(nc, animated: true, completion: nil)
+    }
     
     // MARK: - Module functions
 }

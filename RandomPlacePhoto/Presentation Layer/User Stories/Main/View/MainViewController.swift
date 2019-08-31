@@ -117,6 +117,14 @@ extension MainViewController {
         output?.loadData()
     }
     
+    @objc
+    private func imageViewTapGestureHandler(_ recognizer: UITapGestureRecognizer) {
+        guard let view = recognizer.view as? UIImageView,
+            let image = view.image else { return }
+        
+        output?.selectImage(with: image)
+    }
+    
 }
 
 // MARK: - Module functions
@@ -147,6 +155,10 @@ extension MainViewController {
         
         let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(self.imageViewPanGestureHandler))
         panGestureRecognizer.minimumNumberOfTouches = 1
+        panGestureRecognizer.delegate = self
+        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageViewTapGestureHandler))
+        tapGestureRecognizer.delegate = self
+        imageView.addGestureRecognizer(tapGestureRecognizer)
         imageView.addGestureRecognizer(panGestureRecognizer)
         photosImageViews.append(imageView)
         
@@ -158,6 +170,25 @@ extension MainViewController {
             imageView.removeFromSuperview()
         }
         photosImageViews = []
+    }
+    
+    func displayShareSheet() {
+        let activityViewController = UIActivityViewController(activityItems: ["dsfs" as NSString], applicationActivities: nil)
+        navigationController?.present(activityViewController, animated: true, completion: nil)
+    }
+    
+}
+
+// MARK: - UIGestureRecognizerDelegate
+extension MainViewController: UIGestureRecognizerDelegate {
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer,
+                           shouldRequireFailureOf otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        if gestureRecognizer is UITapGestureRecognizer &&
+            otherGestureRecognizer is UIPanGestureRecognizer {
+            return true
+        }
+        return false
     }
     
 }

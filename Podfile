@@ -17,4 +17,7 @@ target 'RandomPlacePhoto' do
   # Flickr
   pod 'FlickrKit', '1.0.9'
 
+  # System messages
+  pod 'Toast-Swift', '~> 5.0.0'
+
 end

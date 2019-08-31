@@ -15,6 +15,7 @@ enum AppLocalization {
         case save = "Save"
         case cancel = "Cancel"
         case next = "Next"
+        case error = "Error"
     }
     
     enum Theme: String, Localizable {
@@ -25,6 +26,10 @@ enum AppLocalization {
     enum Language: String, Localizable {
         case english = "AppLanguageEnglish"
         case russian = "AppLanguageRussian"
+    }
+    
+    enum Error: String, Localizable {
+        case internerConnection = "InternetConnectionError"
     }
     
     enum Main: String, Localizable {

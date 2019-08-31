@@ -6,6 +6,9 @@
 //  Copyright © 2019 Vladislav Markov. All rights reserved.
 //
 
+import UIKit
+
 protocol MainViewOutput {
     func loadData()
+    func selectImage(with image: UIImage)
 }

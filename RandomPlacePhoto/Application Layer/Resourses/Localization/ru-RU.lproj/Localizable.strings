@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  RandomPlacePhoto
+
+  Created by Vladislav on 12/08/2019.
+  Copyright © 2019 Vladislav Markov. All rights reserved.
+*/
+
+// MARK: - Основное
+"OK" = "ОК";
+"Save" = "Сохранить";
+"Cancel" = "Отмена";
+"Next" = "Следующий";
+"Error" = "Ошибка";
+"Close" = "Закрыть";
+
+// MARK: - Темы и языки
+"AppThemeLight" = "Светлая";
+"AppThemeDark" = "Тёмная";
+
+"AppLanguageEnglish" = "Английский";
+"AppLanguageRussian" = "Русский";
+
+// MARK: - Ошибки
+"InternetConnectionError" = "Вероятно, соединение с Интернетом прервано.";
+
+// MARK: - Главная
+"MainNextCityTitle" = "Следующий город";
+
+// MARK: - Настройки
+"SettingsPrivacyPolicy" = "Политика конфиденциальности";

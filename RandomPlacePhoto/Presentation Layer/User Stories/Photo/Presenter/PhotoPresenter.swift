@@ -8,7 +8,6 @@
 
 import UIKit
 
-// TODO: - Добавить уникальное именование файлов
 class PhotoPresenter: PhotoPresenterInput, PhotoViewOutput {
     
     // MARK: - Props

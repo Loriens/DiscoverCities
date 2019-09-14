@@ -340,8 +340,8 @@
 		046311552301CA9C00C640E8 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0406C9F42301C8880075A96B /* Assets.xcassets */,
 				046311562301CAAC00C640E8 /* AppAssets.swift */,
+				0406C9F42301C8880075A96B /* Assets.xcassets */,
 			);
 			path = Assets;
 			sourceTree = "<group>";

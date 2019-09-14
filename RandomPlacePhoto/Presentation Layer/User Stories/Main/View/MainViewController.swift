@@ -25,6 +25,8 @@ class MainViewController: UIViewController, MainViewInput {
     private var photosImageViews: [UIImageView] = []
     private var loader: Loader?
     
+    private var blockNextButtonTimer: Timer?
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +40,13 @@ class MainViewController: UIViewController, MainViewInput {
     
     override func viewDidLayoutSubviews() {
         applyStyles()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        blockNextButtonTimer?.fire()
+        blockNextButtonTimer = nil
     }
     
     // MARK: - Setup functions
@@ -129,6 +138,10 @@ extension MainViewController {
     private func nextButtonPressed() {
         clearData()
         loadData()
+        blockNextButton()
+        blockNextButtonTimer = Timer.scheduledTimer(withTimeInterval: 3, repeats: false, block: { [weak self] _ in
+            self?.unblockNextButton()
+        })
     }
     
     @objc
@@ -190,12 +203,29 @@ extension MainViewController {
         for imageView in photosImageViews {
             imageView.removeFromSuperview()
         }
+        for view in view.subviews where view is UIImageView {
+            view.removeFromSuperview()
+        }
         photosImageViews = []
     }
     
-    func displayShareSheet() {
+    private func displayShareSheet() {
         let activityViewController = UIActivityViewController(activityItems: ["dsfs" as NSString], applicationActivities: nil)
         navigationController?.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    private func blockNextButton() {
+        DispatchQueue.main.async {
+            self.nextCityButton.isEnabled = false
+            self.nextCityButton.backgroundColor = .gray
+        }
+    }
+    
+    private func unblockNextButton() {
+        DispatchQueue.main.async {
+            self.nextCityButton.isEnabled = true
+            self.nextCityButton.backgroundColor = AppTheme.accentMain
+        }
     }
     
 }

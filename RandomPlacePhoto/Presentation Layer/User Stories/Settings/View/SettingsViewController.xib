@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14865.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14819.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,17 +27,17 @@
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwF-WE-AEh">
-                    <rect key="frame" x="62.5" y="258.5" width="250" height="150"/>
+                    <rect key="frame" x="16" y="258.5" width="343" height="150"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBX-Xw-ETC">
-                            <rect key="frame" x="32" y="25" width="186" height="40"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBX-Xw-ETC">
+                            <rect key="frame" x="16" y="25" width="311" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="Ltm-0K-H9a"/>
                             </constraints>
                             <state key="normal" title="Button"/>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8j-zT-Osj">
-                            <rect key="frame" x="32" y="85" width="186" height="40"/>
+                            <rect key="frame" x="16" y="85" width="311" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="zf4-61-Fhn"/>
                             </constraints>
@@ -46,23 +46,23 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="250" id="1xL-0W-UY7"/>
-                        <constraint firstAttribute="trailing" secondItem="mBX-Xw-ETC" secondAttribute="trailing" constant="32" id="4Ep-EZ-kCv"/>
-                        <constraint firstItem="O8j-zT-Osj" firstAttribute="leading" secondItem="MwF-WE-AEh" secondAttribute="leading" constant="32" id="EzI-Hd-nyW"/>
+                        <constraint firstAttribute="trailing" secondItem="mBX-Xw-ETC" secondAttribute="trailing" constant="16" id="4Ep-EZ-kCv"/>
+                        <constraint firstItem="O8j-zT-Osj" firstAttribute="leading" secondItem="MwF-WE-AEh" secondAttribute="leading" constant="16" id="EzI-Hd-nyW"/>
                         <constraint firstItem="mBX-Xw-ETC" firstAttribute="centerY" secondItem="MwF-WE-AEh" secondAttribute="centerY" constant="-30" id="XFj-NB-DUG"/>
                         <constraint firstItem="O8j-zT-Osj" firstAttribute="centerY" secondItem="MwF-WE-AEh" secondAttribute="centerY" constant="30" id="cBn-mR-m3M"/>
-                        <constraint firstAttribute="trailing" secondItem="O8j-zT-Osj" secondAttribute="trailing" constant="32" id="fRH-4p-loJ"/>
-                        <constraint firstItem="mBX-Xw-ETC" firstAttribute="leading" secondItem="MwF-WE-AEh" secondAttribute="leading" constant="32" id="fzI-Di-4Ye"/>
+                        <constraint firstAttribute="trailing" secondItem="O8j-zT-Osj" secondAttribute="trailing" constant="16" id="fRH-4p-loJ"/>
+                        <constraint firstItem="mBX-Xw-ETC" firstAttribute="leading" secondItem="MwF-WE-AEh" secondAttribute="leading" constant="16" id="fzI-Di-4Ye"/>
                         <constraint firstAttribute="height" constant="150" id="kv3-R6-ra1"/>
                     </constraints>
                 </view>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="MwF-WE-AEh" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6Oo-Ch-vvK"/>
                 <constraint firstAttribute="bottom" secondItem="b2S-mq-oAC" secondAttribute="bottom" id="E1F-cc-QLi"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="b2S-mq-oAC" secondAttribute="trailing" id="JR2-zt-QhM"/>
                 <constraint firstItem="MwF-WE-AEh" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="Rwm-wJ-GT8"/>
+                <constraint firstItem="MwF-WE-AEh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="d9N-jN-aDE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MwF-WE-AEh" secondAttribute="trailing" constant="16" id="er4-on-O6t"/>
                 <constraint firstItem="b2S-mq-oAC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mhE-46-vOu"/>
                 <constraint firstItem="b2S-mq-oAC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sSj-Ra-8JE"/>
             </constraints>

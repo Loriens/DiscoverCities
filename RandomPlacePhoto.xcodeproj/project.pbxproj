@@ -440,9 +440,9 @@
 			isa = PBXGroup;
 			children = (
 				0473F51323032199005412BF /* MainViewController.swift */,
-				0473F51123032199005412BF /* MainViewController.xib */,
 				0473F51023032199005412BF /* MainViewInput.swift */,
 				0473F51223032199005412BF /* MainViewOutput.swift */,
+				0473F51123032199005412BF /* MainViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -504,10 +504,10 @@
 		04DCD0CC232CC956007AB9F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				04DCD0CD232CC956007AB9F6 /* SettingsViewOutput.swift */,
-				04DCD0CE232CC956007AB9F6 /* SettingsViewController.xib */,
 				04DCD0CF232CC956007AB9F6 /* SettingsViewController.swift */,
+				04DCD0CE232CC956007AB9F6 /* SettingsViewController.xib */,
 				04DCD0D0232CC956007AB9F6 /* SettingsViewInput.swift */,
+				04DCD0CD232CC956007AB9F6 /* SettingsViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -543,9 +543,9 @@
 		04DCD0D7232CC956007AB9F6 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				04DCD0D8232CC956007AB9F6 /* PhotoPresenterOutput.swift */,
 				04DCD0D9232CC956007AB9F6 /* PhotoPresenter.swift */,
 				04DCD0DA232CC956007AB9F6 /* PhotoPresenterInput.swift */,
+				04DCD0D8232CC956007AB9F6 /* PhotoPresenterOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -553,10 +553,10 @@
 		04DCD0DB232CC956007AB9F6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04DCD0DF232CC956007AB9F6 /* PhotoViewController.swift */,
 				04DCD0DC232CC956007AB9F6 /* PhotoViewController.xib */,
 				04DCD0DD232CC956007AB9F6 /* PhotoViewInput.swift */,
 				04DCD0DE232CC956007AB9F6 /* PhotoViewOutput.swift */,
-				04DCD0DF232CC956007AB9F6 /* PhotoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -572,8 +572,8 @@
 		04DCD0E2232CC956007AB9F6 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				04DCD0E3232CC956007AB9F6 /* PhotoRouterInput.swift */,
 				04DCD0E4232CC956007AB9F6 /* PhotoRouter.swift */,
+				04DCD0E3232CC956007AB9F6 /* PhotoRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -593,8 +593,8 @@
 			isa = PBXGroup;
 			children = (
 				04DCD0E7232CC956007AB9F6 /* SafariPresenter.swift */,
-				04DCD0E8232CC956007AB9F6 /* SafariPresenterOutput.swift */,
 				04DCD0E9232CC956007AB9F6 /* SafariPresenterInput.swift */,
+				04DCD0E8232CC956007AB9F6 /* SafariPresenterOutput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -604,8 +604,8 @@
 			children = (
 				04DCD0EB232CC956007AB9F6 /* SafariViewController.swift */,
 				04DCD0EC232CC956007AB9F6 /* SafariViewController.xib */,
-				04DCD0ED232CC956007AB9F6 /* SafariViewOutput.swift */,
 				04DCD0EE232CC956007AB9F6 /* SafariViewInput.swift */,
+				04DCD0ED232CC956007AB9F6 /* SafariViewOutput.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -621,8 +621,8 @@
 		04DCD0F1232CC956007AB9F6 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				04DCD0F2232CC956007AB9F6 /* SafariRouterInput.swift */,
 				04DCD0F3232CC956007AB9F6 /* SafariRouter.swift */,
+				04DCD0F2232CC956007AB9F6 /* SafariRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1023,6 +1023,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markov.vladislav.DiscoverCities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1043,6 +1044,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = markov.vladislav.DiscoverCities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

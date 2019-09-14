@@ -1,4 +1,5 @@
 **/Pods
+**/Excluded Folder
 Podfile.lock
 xcuserdata/
 AppConfiguration.swift

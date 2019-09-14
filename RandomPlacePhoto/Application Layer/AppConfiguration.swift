@@ -19,7 +19,7 @@ enum AppConfiguration {
     }
     
     static var privacyPolicyUrl: String {
-        return "http://www.africau.edu/images/default/sample.pdf"
+        return "http://vk.com/doc42011344_515725428?hash=f09f2aff1fe3a47feb&dl=61a1189dabd0914e13"
     }
     
 }

@@ -217,14 +217,14 @@ extension MainViewController {
     private func blockNextButton() {
         DispatchQueue.main.async {
             self.nextCityButton.isEnabled = false
-            self.nextCityButton.backgroundColor = .gray
+            self.nextCityButton.alpha = 0.5
         }
     }
     
     private func unblockNextButton() {
         DispatchQueue.main.async {
             self.nextCityButton.isEnabled = true
-            self.nextCityButton.backgroundColor = AppTheme.accentMain
+            self.nextCityButton.alpha = 1.0
         }
     }
     

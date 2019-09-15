@@ -8,7 +8,7 @@
 
 import UIKit
 
-// TODO: - Удалить этот бесполезные менеджер
+// TODO: - Удалить этот бесполезный менеджер
 enum AppLocalizationType: String {
     case english = "LOCALIZATION_ENG"
     case russian = "LOCALIZATION_RUS"

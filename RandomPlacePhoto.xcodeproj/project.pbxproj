@@ -85,6 +85,7 @@
 		04DCD111232CC956007AB9F6 /* SafariRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD0F3232CC956007AB9F6 /* SafariRouter.swift */; };
 		04DCD113232CC9AE007AB9F6 /* AdditionalSearchKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD112232CC9AE007AB9F6 /* AdditionalSearchKey.swift */; };
 		04DCD115232CC9F6007AB9F6 /* Data+dataToFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DCD114232CC9F5007AB9F6 /* Data+dataToFile.swift */; };
+		04FF363D233AA4EA0068B2BC /* AppConfigurationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FF363C233AA4EA0068B2BC /* AppConfigurationExample.swift */; };
 		8FBB3C8E0B415FED3B9ADB94 /* Pods_RandomPlacePhoto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50E8ED9F7363EE3990618BFB /* Pods_RandomPlacePhoto.framework */; };
 /* End PBXBuildFile section */
 
@@ -170,6 +171,7 @@
 		04DCD0F3232CC956007AB9F6 /* SafariRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariRouter.swift; sourceTree = "<group>"; };
 		04DCD112232CC9AE007AB9F6 /* AdditionalSearchKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalSearchKey.swift; sourceTree = "<group>"; };
 		04DCD114232CC9F5007AB9F6 /* Data+dataToFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+dataToFile.swift"; sourceTree = "<group>"; };
+		04FF363C233AA4EA0068B2BC /* AppConfigurationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurationExample.swift; sourceTree = "<group>"; };
 		3918795E5080120FA7E068E4 /* Pods-RandomPlacePhoto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPlacePhoto.debug.xcconfig"; path = "Target Support Files/Pods-RandomPlacePhoto/Pods-RandomPlacePhoto.debug.xcconfig"; sourceTree = "<group>"; };
 		50E8ED9F7363EE3990618BFB /* Pods_RandomPlacePhoto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RandomPlacePhoto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88A7C08665D533ABF83A9AA8 /* Pods-RandomPlacePhoto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RandomPlacePhoto.release.xcconfig"; path = "Target Support Files/Pods-RandomPlacePhoto/Pods-RandomPlacePhoto.release.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				0463114E2301CA6C00C640E8 /* AppConfiguration.swift */,
+				04FF363C233AA4EA0068B2BC /* AppConfigurationExample.swift */,
 				046311502301CA7D00C640E8 /* AppDefaults.swift */,
 				0406C9ED2301C8860075A96B /* AppDelegate.swift */,
 				0406C9F92301C8880075A96B /* Info.plist */,
@@ -855,6 +858,7 @@
 				04DCD115232CC9F6007AB9F6 /* Data+dataToFile.swift in Sources */,
 				04DCD109232CC956007AB9F6 /* SafariPresenterOutput.swift in Sources */,
 				04DCD105232CC956007AB9F6 /* PhotoConfigurator.swift in Sources */,
+				04FF363D233AA4EA0068B2BC /* AppConfigurationExample.swift in Sources */,
 				04DCD0FA232CC956007AB9F6 /* SettingsViewInput.swift in Sources */,
 				04DCD100232CC956007AB9F6 /* PhotoPresenterInput.swift in Sources */,
 				04DCD10D232CC956007AB9F6 /* SafariViewOutput.swift in Sources */,
